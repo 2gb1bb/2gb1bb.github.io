@@ -37,22 +37,22 @@ p {
 	width: 20px;
 }
 
-#carissma {
-	background-color: #e791b4;
+#vista-blue {
+	background-color: #9BD7BE;
 }
 
-#waikawa-grey {
-	background-color: #5469aa;
-}
-
-#wisteria {
-	background-color: #a374aa;
-}
-
-#deep-blush {
-	background-color: #e16985;
+#apple {
+	background-color: #38963b;
 }
 
 #red-damask {
-	background-color: #d65c44;
+	background-color: #D65C44;
+}
+
+#deep-blush {
+	background-color: #E16985;
+}
+
+#deco {
+	background-color: #d4d585;
 }
