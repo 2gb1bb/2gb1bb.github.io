@@ -11,9 +11,6 @@ a:visited {
 	color: blue;
 }
 
-ul {
-	list-style: none;
-}
 
 p {
 	text-align: justify;
@@ -22,6 +19,10 @@ p {
 .container {
 	max-width: 1080px;
 	margin: auto;
+}
+
+.list-style-none {
+	list-style: none;
 }
 
 .break {
