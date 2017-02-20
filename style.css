@@ -16,6 +16,15 @@ p {
 	text-align: justify;
 }
 
+.big-boi {
+	color: white;
+	font-size: 100px;
+	width: 70%;
+	margin: 30% 15% 0 15%;
+	text-align: center;
+}
+
+
 .container {
 	max-width: 1080px;
 	width: 80%;
