@@ -18,6 +18,7 @@ p {
 
 .container {
 	max-width: 1080px;
+	width: 80%;
 	margin: auto;
 }
 
