@@ -4,10 +4,36 @@
 	<title>Slope Field</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<script type="text/javascript" src="phaser.min.js"></script>
+    <script type="text/javascript">
+var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
+
+
+var numberoflines = 200;
+function preload() {
+    game.load.image('arrow', 'line.png');
+    game.stage.disableVisibilityChange = true;
+}
+var lines = [];
+function create() {
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+    game.stage.backgroundColor = '#f8efdd';
+    for (i = 0; i < numberoflines; i++) {
+        lines[i] = game.add.sprite((i % 20) * 128, Math.floor(i / 20) * 128, 'arrow');
+        lines[i].anchor.setTo(0.5, 0.5);
+    }
+}
+function update() {
+    for (i = 0; i < numberoflines; i++) {
+        lines[i].rotation = game.physics.arcade.angleToPointer(lines[i]);
+    }
+}
+</script>
 </head>
 <body style="background-color: #f8efdd;">
-
-	<h1 class="big-boi">Slope Field</h1>
-
+<div class="container-home">
+	<div><h1 class="big-boi">Slope Field</h1></div>
+    <div id="phaser-example"></div>
+</div>
 </body>
 </html>

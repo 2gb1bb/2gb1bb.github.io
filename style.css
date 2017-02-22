@@ -16,12 +16,19 @@ p {
 	text-align: justify;
 }
 
+#phaser-example {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
 .big-boi {
 	color: #4055b6;
 	font-size: 100px;
 	width: 70%;
 	margin: 10% 15% 0 15%;
 	text-align: center;
+	position: absolute;
 }
 
 
